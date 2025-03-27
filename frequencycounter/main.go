@@ -15,19 +15,11 @@ func same(arr1, arr2 []int) bool {
 	arr2FC := map[int]int{}
 
 	for _, n := range arr1 {
-		if _, ok := arr1FC[n]; ok {
-			arr1FC[n] += 1
-		} else {
-			arr1FC[n] = 1
-		}
+		arr1FC[n]++
 	}
 
 	for _, n := range arr2 {
-		if _, ok := arr2FC[n]; ok {
-			arr2FC[n] += 1
-		} else {
-			arr2FC[n] = 1
-		}
+		arr1FC[n]++
 	}
 
 	for k, v := range arr1FC {
@@ -55,11 +47,7 @@ func sameString(str1, str2 string) bool {
 
 	for i := 0; i < len(str1); i++ {
 		char := string(str1[i])
-		if _, ok := lookup[char]; ok {
-			lookup[char] += 1
-		} else {
-			lookup[char] = 1
-		}
+		lookup[char]++
 	}
 
 	for i := 0; i < len(str2); i++ {
