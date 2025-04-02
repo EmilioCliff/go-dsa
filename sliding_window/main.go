@@ -34,17 +34,28 @@ func main() {
 	log.Println(fruitIntoBaskets(arr2))
 	log.Println(fruitIntoBaskets(arr3))
 
-	// arr4 := "abcabcbb"
-	// arr5 := "pwwkew"
-	// arr6 := "dvdf"
+	arr4 := "abcabcbb"
+	arr5 := "pwwkew"
+	arr6 := "dvdf"
 	arr7 := "tmmzuxt"
-	// log.Println(longestSubstringWithoutRepeatingChars(arr4))
-	// log.Println(longestSubstringWithoutRepeatingChars(arr5))
-	// log.Println(longestSubstringWithoutRepeatingChars(arr6))
+	log.Println(longestSubstringWithoutRepeatingChars(arr4))
+	log.Println(longestSubstringWithoutRepeatingChars(arr5))
+	log.Println(longestSubstringWithoutRepeatingChars(arr6))
 	log.Println(longestSubstringWithoutRepeatingCharsOpt(arr7))
 
 	arr8 := "AABABBA"
-	// arr9 := "BBABCCDD"
+	arr9 := "BBABCCDD"
 	log.Println(longestRepeatingCharReplacement(arr8, 1))
-	// log.Println(longestRepeatingCharReplacement(arr9, 2))
+	log.Println(longestRepeatingCharReplacement(arr9, 2))
+
+	arr10 := []int{2, 1, 5, 1, 3, 2}
+	log.Println(maxSumOfSubarrayWithSizeK(arr10, 3))
+
+	arr11 := []int{2, 11, 4, 5, 3, 9, 2}
+	arr12 := []int{9, 7, 7, 9, 7, 7, 9}
+	log.Println(maxPointsYouCAnObtainFromCards(arr11, 3))
+	log.Println(maxPointsYouCAnObtainFromCards(arr12, 7))
+
+	arr13 := []int{3, 2, 2, 3, 4, 6, 7, 7, -1}
+	log.Println(maxSumOfDistinctSubarraysLenghtK(arr13, 4))
 }
